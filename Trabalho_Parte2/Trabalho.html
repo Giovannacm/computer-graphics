@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trabalho CG Giovanna</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div id="menu">
+            <form>
+                <input id="ZBuffer" name="operacao" type="radio" checked/>Z-Buffer
+                <input id="SupBilinear" name="operacao" type="radio" />Superfície Bilinear
+                <input id="VarrRot" name="operacao" type="radio" />Varredura rotacional
+                <input id="Iluminacao" name="operacao" type="radio" />Iluminação
+            </form>
+        </div>
+
+        <div id="canvas">
+            <canvas id="myCanvas" width="1000" height="500">Seu browser não suporta o elemento canvas</canvas>
+        </div>
+
+
+        <div id="operacoes">
+            <div id="menuRotacao">
+                <div>
+                    <p>Graus</p>
+                    <input id="grau" name="numberInput" />
+                </div>
+                <div>
+                    <p>Eixos</p>
+                    <form>
+                        <input id="eixoX" name="eixo" type="radio" checked />X
+                        <input id="eixoY" name="eixo" type="radio" />Y
+                        <input id="eixoZ" name="eixo" type="radio" />Z
+                    </form>
+                </div>
+                <button id="btnRotacao" type="button" onclick="rotaciona()">Rotacionar</button>
+            </div>
+
+            <div id="menuVarredura">
+                <button id="aplicarVarredura" disabled>Aplicar Varredura Rotacional</button>
+            </div>
+
+            <div id="menuIluminacao">
+                <div id="tipo1">
+                    <p>Ia</p>
+                    <input id="Ia" name="numberInput" value="1.0" />
+                    <p>Ka</p>
+                    <input id="Ka" name="numberInput" value="0.5" />
+                    <p>Il</p>
+                    <input id="Il" name="numberInput" value="1.0" />
+                    <button id="aplicarIluminacao1" disabled>Aplicar Iluminação 1</button>
+                </div>
+                <div id="tipo2">
+                    <p>k</p>
+                    <input id="k" name="numberInput" value="6" />
+                    <p>n</p>
+                    <input id="n" name="numberInput" value="10" />
+                    <button id="aplicarIluminacao2" disabled>Aplicar Iluminação 2</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

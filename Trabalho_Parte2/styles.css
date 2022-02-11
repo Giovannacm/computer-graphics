@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial';
+}
+
+p {
+	margin: 0px;
+	margin-top: 5px;
+}
+
+#myCanvas {
+    display: inline-block;
+}
+
+#canvas {
+    width: 100%;
+    text-align: center;
+}
+
+#menu {
+	margin: 15px;
+	align-items: center;
+    text-align: center;
+}
+
+#operacoes {
+	width: 100%;
+	align-items: center;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+#menuRotacao {
+	width: 20%;
+	position: relative;
+	padding-left: 20px;
+}
+
+#menuVarredura {
+	width: 40%;
+	position: relative;
+	align-items: center;
+}
+
+#menuIluminacao {
+    width: 40%;
+    position: relative;
+    padding-right: 20px;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#tipo1 {
+	width: 50%;
+}
+
+#tipo2 {
+	width: 50%;
+}
+
+#btnRotacao {
+	margin-top: 5px;
+	padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+#aplicarVarredura {
+	padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+#aplicarIluminacao1 {
+	margin-top: 5px;
+	padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+#aplicarIluminacao2 {
+	margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12pt;
+}
